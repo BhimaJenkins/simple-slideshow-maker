@@ -1,0 +1,18 @@
+[package]
+name = "slideshow-core"
+description = "Project model, renderer and exporters for Simple Slideshow Maker"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "gif", "bmp", "webp", "tiff", "tga", "ico", "pnm", "rayon"] }
+gif = "0.14"
+ab_glyph = "0.2"
+fontdb = "0.24"
+epaint_default_fonts = "0.37"
+rayon = "1"
+thiserror = "2"
+log = "0.4"
