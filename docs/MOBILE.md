@@ -6,7 +6,7 @@ the interface is egui, which runs on Android and iOS. What is left for a store-r
 ## Android
 
 1. Install the Android SDK + NDK and `cargo install cargo-ndk` (or `xbuild`).
-2. `cargo ndk -t arm64-v8a build --release -p simple-slideshow-maker --lib` builds `libsimple_slideshow_maker.so`
+2. `cargo ndk -t arm64-v8a -P 26 build --release -p simple-slideshow-maker --lib` builds `libsimple_slideshow_maker.so`
    with the `android_main` entry point (NativeActivity).
 3. Package it with a small Gradle project or `xbuild` (`x build --platform android`).
 
